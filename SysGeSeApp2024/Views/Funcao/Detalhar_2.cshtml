@@ -1,0 +1,39 @@
+﻿@using SysGeSeApp2024.Models.ViewModel
+@using SysGeSeApp2024.Models.Enums
+@model FuncaoViewModel
+@{
+    ViewBag.Title = "Detalhar";
+}
+
+<form asp-controller="Funcao" asp-action="Incluir" class="row p1">
+    <div class="card p-0">
+        <div class="card-header">
+            <span class="prn-font-card-header">Detalhes de Função</span>
+
+            <a asp-controller="Funcao" asp-action="Index" class="float-end btn btn-outline-danger mr-1 btn-sm"><i class="fa-duotone fa-ban"></i>&nbsp; Cancelar</a>
+           
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="row mb-3">
+                <label asp-for="Id" class="col-sm-2 col-form-label">ID</label>
+                <div class="col-sm-4">
+                    <input asp-for="Id" class="form-control" disabled>
+                </div>
+            </div>
+         
+            <div class="row mb-3">
+                <label asp-for="Descricao" class="col-sm-2 col-form-label">Descrição</label>
+                <div class="col-sm-10">
+                    <input asp-for="Descricao" class="form-control" disabled>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</form>

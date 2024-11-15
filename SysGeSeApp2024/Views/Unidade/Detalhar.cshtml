@@ -1,0 +1,123 @@
+﻿@using SysGeSeApp2024.Models.ViewModel
+@using SysGeSeApp2024.Models.Enums
+@model UnidadeViewModel
+@{
+    ViewBag.Title = "Detalhar";
+}
+
+<div class="card p-0">
+    <input hidden asp-for="DataAlt" />
+    <input hidden asp-for="DataCad" />
+    <input hidden asp-for="Status" />
+    <div class="card-header p-2">
+        <span class="prn-font-card-header fw-semibold">Detalhes de Unidade - ID: #@Model.Id</span>
+        <a asp-controller="Unidade" asp-action="Index" class="float-end btn  btn-outline-info mr-1 btn-sm"><i class="fa-duotone fa-arrow-left"></i>&nbsp; Voltar</a>
+        <a asp-controller="Unidade" asp-action="Editar" class="float-end btn btn-outline-primary mr-1 btn-sm" asp-route-id="@Model.Id"><i class="fa-duotone fa-pen-to-square"></i>&nbsp; Editar</a>
+       
+
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <label asp-for="Nome" class="form-label">Unidade</label>
+                <input asp-for="Nome" class="form-control form-control-sm"  data-val="True" disabled />
+               
+
+
+            </div>
+            <div class="col-lg-3">
+                <label asp-for="Cnpj" class="form-label">CNPJ</label>
+                <input asp-for="Cnpj" class="form-control form-control-sm"  data-val="True" disabled />
+
+
+
+            </div>
+            <div class="col-lg-3">
+                <label asp-for="Ie" class="form-label">IE</label>
+                <input asp-for="Ie" class="form-control form-control-sm"  data-val="True" disabled />
+
+
+            </div>
+
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-lg-2">
+                <label asp-for="Cep" class="form-label">CEP</label>
+                <input asp-for="Cep" class="form-control form-control-sm" data-val="True" disabled />
+
+            </div>
+            <div class="col-lg-7">
+                <label asp-for="Logradouro" class="form-label">Logradouro</label>
+                <input asp-for="Logradouro" class="form-control form-control-sm" data-val="True" disabled />
+               
+            </div>
+            <div class="col-lg-3">
+                <label asp-for="Bairro" class="form-label">Bairro</label>
+                <input asp-for="Bairro" class="form-control form-control-sm" data-val="True" disabled />
+               
+            </div>
+
+
+        </div>
+        <div class="row mt-2">
+            <div class="col-lg-9">
+                <label asp-for="Cidade" class="form-label">Cidade</label>
+                <input asp-for="Cidade" class="form-control form-control-sm"  data-val="True" disabled />
+               
+            </div>
+            <div class="col-lg-3">
+                <label asp-for="Estado" class="form-label form-label-sm">Estado</label>
+                <input asp-for="Estado" class="form-control form-control-sm"  data-val="True" disabled />
+
+            </div>
+        </div>
+        <div class="row mt-2">
+
+
+            <div class="col-lg-3">
+                <label asp-for="Telefone" class="form-label">Telefone</label>
+                <input asp-for="Telefone" class="form-control form-control-sm" data-val="True" disabled />
+
+            </div>
+            <div class="col-lg-3">
+                <label asp-for="Celular" class="form-label">Celular</label>
+                <input asp-for="Celular" class="form-control form-control-sm"  data-val="True" disabled />
+
+            </div>
+
+            <div class="col-lg-6">
+                <label asp-for="Email" class="form-label">E-Mail</label>
+                <input asp-for="Email" class="form-control form-control-sm"  data-val="True" disabled />
+
+
+            </div>
+        </div>
+        <div class="row mt-2">
+
+
+            <div class="col-lg-12">
+                <label asp-for="Observacoes" class="form-label">Observações</label>
+                <textarea rows="4" cols="50" asp-for="Observacoes" class="form-control form-control-sm"  data-val="True" disabled></textarea>
+            </div>
+
+        </div>
+        <div class="row mt-2">
+
+
+            <div class="col-lg-6">
+                <label asp-for="DataCad" class="form-label">Data do Cadastro</label>
+                <input asp-for="DataCad" class="form-control form-control-sm" data-val="True" disabled />
+
+
+            </div>
+            <div class="col-lg-6">
+                <label asp-for="DataAlt" class="form-label">Data da Alteração</label>
+                <input asp-for="DataAlt" class="form-control form-control-sm" data-val="True" disabled />
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

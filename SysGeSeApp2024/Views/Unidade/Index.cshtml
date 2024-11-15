@@ -1,0 +1,135 @@
+﻿@using SysGeSeApp2024.Models.ViewModel
+@using SysGeSeApp2024.Models.Enums
+@model UnidadeListViewModel
+@{
+    ViewBag.Title = "Unidade";
+}
+
+
+<form asp-controller="Unidade" asp-action="Index" class="row p1">
+ <div class="card p-0">
+        <div class="card-header p-2">
+            <span class="prn-font-card-header fw-semibold">Cadastro de Unidades</span>
+            <a asp-controller="Unidade" asp-action="Incluir" class="float-end  btn btn-outline-primary btn-sm"><i class="fa-duotone fa-circle-plus"></i> Novo</a>
+        </div>
+        <div class="card-body p-2">
+            <div class="row">
+                @await Html.PartialAsync("~/Views/Acoes/Mensagens.cshtml")
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <label asp-for="Nome" class="form-label form-label-sm">Nome</label>
+                    <input asp-for="Nome" class="form-control form-control-sm" placeholder="Digite o NOME da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                </div>
+                <div class="col-lg-4">
+                    <label asp-for="Cidade" class="form-label form-label-sm">Cidade</label>
+                    <input asp-for="Cidade" class="form-control form-control-sm" placeholder="Digite a CIDADE da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                </div>
+                <div class="col-lg-2">
+                    <label asp-for="Estado" class="form-label form-label-sm">Estado</label>
+                    <select id="uf" asp-for="Estado" asp-items="@(new SelectList(Model.Estados, "Uf", "Descricao"))" data-val="True" class="form-control form-control-sm form-select">
+                          <option value="">Escolha o Estado</option>
+                    </select>
+
+                </div>
+                <div class="col-lg-2">
+                    <label asp-for="Status" class="form-label form-label-sm">Status</label>
+                    <select asp-for="Status" asp-items="Html.GetEnumSelectList<Status>()" data-val="True" class="form-select form-control-sm"></select>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-12">
+
+                    <button type="submit" class="float-end btn btn-outline-success mr-1 btn-sm"><i class="fa-duotone fa-magnifying-glass"></i>&nbsp; Pesquisar</button>
+                    <button class="float-end btn btn-outline-secondary mr-1 btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-duotone fa-download"></i>&nbsp;Exportar</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fa-duotone fa-file-excel"></i>Excel</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-duotone fa-file-pdf"></i>Pdf</a></li>
+
+                    </ul>
+
+                    <button onclick="limparInputs()" class="float-end btn mr-1 btn-outline-warning  btn-sm"><i class="fa-duotone fa-broom"></i>&nbsp;Limpar</button>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12 table-responsive">
+                    <partial name="_TabelaUnidadePrincipal" model="Model.Unidades" />
+                </div>
+            </div>
+        </div>
+        <section class="footer">
+            <div class="card-footer container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <span>Página @(Model.NumeroPaginas < Model.PaginaAtual ? 0 : Model.PaginaAtual) de @Model.NumeroPaginas - Total de registros: @Model.TotalItens</span>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row align-items-center justify-content-end" style="margin-right: -55px">
+                            <div class="col-md-auto" style="margin-right:-1rem">
+                                <small class="form-text text-muted me-2 px-1">Página com</small>
+                            </div>
+                            <div class="col-md-auto">
+                                <select class="form-select" id="qtdPaginas" asp-for="QtdItensPagina">
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                    <option value="200">200</option>
+                                </select>
+                            </div>
+                            <div class="col-md-auto" style="margin-left:-1rem">
+                                <small class="form-text text-muted ms-2 px-1">Registros</small>
+                            </div>
+                            <script>
+                                document.getElementById("qtdPaginas").addEventListener("change", function () {
+                                    this.form.submit();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <ul class="pagination text-center align-items-center justify-content-end" style="margin-bottom: 0px;">
+
+                                <!-- Link "Anterior" -->
+                                @if (Model.PaginaAtual > 1)
+                                {
+                                    <li style="border: none;">
+                                        <a class="btn  page-link-pr align-middle" href="@Url.Action("index", new { paginaAtual = Model.PaginaAtual - 1, qtdItensPagina = Model.QtdItensPagina, cidade = Model.Cidade,  estado = Model.Estado,  nome = Model.Nome, status = Model.Status })">
+                                            <span>&laquo; Anterior</span>
+                                        </a>
+                                    </li>
+                                }
+
+                                <!-- Itens de página numerados -->
+                                @for (int i = 0; i < Model.NumeroPaginas; i++)
+                                {
+                                    <li class="@(Model.PaginaAtual == i + 1 ? "active" : string.Empty)" style="border: none; padding: 0px;">
+                                        <a class="btn  page-link-pr align-middle" href="@Url.Action("index", new { paginaAtual = i + 1, qtdItensPagina = Model.QtdItensPagina,  cidade = Model.Cidade,  estado = Model.Estado,  nome = Model.Nome, status = Model.Status })">
+                                            <span>@(i + 1)</span>
+                                        </a>
+                                    </li>
+                                }
+
+                                <!-- Link "Próximo" -->
+                                @if (Model.PaginaAtual < Model.NumeroPaginas)
+                                {
+                                    <li class="" style="border: none;">
+                                        <a class="btn  page-link-pr align-middle" href="@Url.Action("index", new { paginaAtual = Model.PaginaAtual + 1, qtdItensPagina = Model.QtdItensPagina, cidade = Model.Cidade,  estado = Model.Estado,  nome = Model.Nome, status = Model.Status })">
+                                            <span>Próximo &raquo;</span>
+                                        </a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+ </div>
+
+
+
+</form>

@@ -1,0 +1,81 @@
+﻿
+<table class="table  table-hover table-striped    table-sm table-responsive-sm">
+    <thead class="prn-font-table-header">
+
+        <tr>
+            <th class="text-center fw-semibold prn-border-columns prn-border-columns-theader-left ">Ativo?</th>
+
+            <th class="text-center fw-semibold prn-border-columns">Tabela</th>
+            <th class="text-center fw-semibold prn-border-columns">Visualizar</th>
+            <th class="text-center fw-semibold prn-border-columns">Inserir</th>
+            <th class="text-center fw-semibold prn-border-columns">Alterar</th>
+            <th class="text-center fw-semibold prn-border-columns">Excluir</th>
+            <th class="text-center fw-semibold prn-border-columns">Perfil</th>
+            <th class="text-center fw-semibold prn-border-columns prn-border-columns-left prn-border-columns-theader">Ação</th>
+
+        </tr>
+    </thead>
+    <tbody class="small table-sm">
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                @if (item.Status == 1)
+                {
+                    <td style="width:5%;" class=" prn-border-columns prn-border-columns-left text-center align-middle">  <a asp-controller="Acesso" asp-action="AtivarDesativar" asp-route-id="@item.Id"> <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="@((item.Status == 1) ? "ATIVO" : "BLOQUEADO")" class="fs-5 text-primary fa-duotone fa-face-laugh-wink"></i> </a></td>
+
+                }
+                else
+                {
+                    <td style="width:5%;" class=" prn-border-columns prn-border-columns-left  text-center align-middle"> <a asp-controller="Acesso" asp-action="AtivarDesativar" asp-route-id="@item.Id"> <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="@((item.Status == 1) ? "ATIVO" : "BLOQUEADO")" class="fs-5 text-danger fa-duotone fa-face-sad-tear"></i></a></td>
+                }
+
+                <td class="prn-border-columns text-rigth align-middle">@item.Tabela.TabelaDesc</td>
+                <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
+                    <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
+                        <i data-bs-toggle="tooltip" data-bs-placement="top"
+                           data-bs-title="@(item.TabelaVisualizar == 1 ? "SIM" : "NÃO")"
+                           class="fs-5 @(item.TabelaVisualizar == 1 ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
+                        </i>
+                    </a>
+                </td>
+                <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
+                    <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
+                        <i data-bs-toggle="tooltip" data-bs-placement="top"
+                           data-bs-title="@(item.TabelaInserir == 1 ? "SIM" : "NÃO")"
+                           class="fs-5 @(item.TabelaInserir == 1 ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
+                        </i>
+                    </a>
+                </td>
+
+                <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
+                    <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
+                        <i data-bs-toggle="tooltip" data-bs-placement="top"
+                           data-bs-title="@(item.TabelaAlterar == 1 ? "SIM" : "NÃO")"
+                           class="fs-5 @(item.TabelaAlterar == 1 ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
+                        </i>
+                    </a>
+                </td>
+
+                <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
+                    <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
+                        <i data-bs-toggle="tooltip" data-bs-placement="top"
+                           data-bs-title="@(item.TabelaExcluir == 1 ? "SIM" : "NÃO")"
+                           class="fs-5 @(item.TabelaExcluir == 1 ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
+                        </i>
+                    </a>
+                </td>
+                @*        <th class="prn-border-columns text-left align-middle" style="width:5%;">@item.Perfil.Descricao</th> *@
+                <td class="prn-border-columns text-rigth align-middle" style="width:7%;">@item.Perfil.Descricao</td>
+
+                <td class="text-center prn-border-columns" style="width:8%;">
+                    <a asp-controller="Perfil" asp-action="Editar" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Alterar Registro" class="btn btn-outline-primary  border-0" asp-route-id="@item.Id"><i class="fs-5 fa-duotone fa-pen-to-square"></i></a>
+                    <a asp-controller="Perfil" asp-action="Detalhar" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Detalhar Registro" class="btn btn-outline-secondary border-0" asp-route-id="@item.Id"><i class="fs-5 fa-duotone fa-circle-info"></i></a>
+                    <a asp-controller="Perfil" asp-action="Deletar" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Excluir Registro" class="btn btn-outline-danger border-0" asp-route-id="@item.Id"><i class="fs-5 fa-duotone fa-trash"></i></a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+
+</table>

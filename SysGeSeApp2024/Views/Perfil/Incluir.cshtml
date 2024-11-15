@@ -1,0 +1,34 @@
+﻿@using SysGeSeApp2024.Models.ViewModel
+@using SysGeSeApp2024.Models.Enums
+@model PerfilViewModel
+@{
+    ViewBag.Title = "Incluir";
+}
+
+<form asp-controller="Perfil" asp-action="Incluir" class="row p1">
+    <div class="card p-0">
+        <div class="card-header p-2">
+            <span class="prn-font-card-header fw-semibold">Cadastro de Perfil</span>
+
+            <a asp-controller="Perfil" asp-action="Index" class="float-end btn btn-outline-danger mr-1 btn-sm"><i class="fa-duotone fa-ban"></i>&nbsp; Cancelar</a>
+            <button type="submit" class="float-end btn mr-1 btn-outline-primary  btn-sm"><i class="fa-duotone fa-floppy-disk"></i>&nbsp;Salvar</button>
+
+        </div>
+
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-10">
+                    <label asp-for="Descricao" class="form-label">Perfil*</label>
+                    <input asp-for="Descricao" class="form-control form-control-sm" placeholder="Digite a DESCRIÇÃO" data-val="True" onkeyup="maiuscula(this);" />
+                    <span asp-validation-for="Descricao" class="text-danger"></span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</form>
+

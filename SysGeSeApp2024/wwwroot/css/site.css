@@ -1,0 +1,147 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/**Alterações pontuais*/
+.prn-cardposition {
+    margin-top: -25px !important;
+}
+
+.prn-card-geral {
+    --bs-card-spacer-y: 0.5rem !important;
+    --bs-card-spacer-x: 0.5rem !important;
+}
+.prn-continer-geral {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+}
+.prn-fundo {
+    /* Background pattern from Toptal Subtle Patterns */
+
+    background-image: url("/lib/Img/logo_sistema.png") !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.prn-font-card-header {
+    color: #858796 !important;
+    font-size: 1.1rem !important;
+    font-weight: 600;
+}
+.prn-border-columns {
+    border-right: 0.5px solid #ccc !important;
+}
+
+.prn-border-columns-left {
+    border-left: 0.5px solid #ccc !important;
+}
+
+
+
+.prn-border-columns-theader {
+    border-right: 0.5px solid #063970 !important;
+}
+
+.prn-border-columns-theader-left {
+    border-left: 0.5px solid #063970 !important;
+}
+
+
+.prn-font-table-header {
+    background-color: #063970;
+    color: #fff !important;
+}
+
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #063970 !important;
+}
+
+
+.pagination {
+    --bs-pagination-active-bg: none !important;
+    --bs-pagination-color: none !important;
+}
+
+    .pagination li {
+        border-radius: 4px;
+        border-color: red !important;
+        border: none !important;
+    }
+
+    .pagination a {
+        border-radius: 4px;
+        border-color: lightgrey !important;
+        border: none !important;
+    }
+
+    .pagination li a {
+    }
+    .pagination > li {
+       
+        background: #0000000d;
+    }
+
+        .pagination > li > a {
+            text-decoration: none;
+        }
+
+    .pagination > .PagedList-skipToPrevious {
+        border-top-left-radius: 10px;
+        border-right: none;
+        border-bottom-left-radius: 10px;
+    }
+
+    .pagination > .PagedList-skipToNext {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: none;
+    }
+
+    .pagination > .active {
+        background-color: steelblue !important;
+        color: #fff !important;
+    }
+
+.page-item:hover a {
+    background-color: steelblue !important;
+    color: #fff !important;
+}
+
+.page-item:hover {
+    background-color: steelblue !important;
+    color: #fff !important;
+}
+.active >  a{
+    color:#fff !important;
+}
+.page-link-pr {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    border: 0.5px solid #063970 !important;
+}

@@ -1,0 +1,30 @@
+﻿
+	@if (TempData["Error"] != null)
+	{
+		<div class="col=lg-12">
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				<strong><i class="fa-solid  fa-triangle-exclamation fs-5"></i> </strong>  @TempData["Error"]
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+		</div>
+	}
+
+	@if (TempData["Info"] != null)
+	{
+		<div class="col=lg-12">
+			<div class="alert alert-info alert-dismissible fade show" role="alert">
+				<strong><i class="fa-solid fa-circle-info fs-5"></i> </strong>  @TempData["Info"]
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+		</div>
+	}
+
+	@if (TempData["Success"] != null)
+	{
+		<div class="col=lg-12">
+			<div class="alert alert-success alert-dismissible fade show" role="alert">
+				<strong><i class="fa-regular fa-thumbs-up fs-5"></i></strong> @TempData["Success"]
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+		</div>
+	}

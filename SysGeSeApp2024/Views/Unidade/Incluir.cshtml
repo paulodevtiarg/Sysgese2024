@@ -1,0 +1,125 @@
+﻿@using SysGeSeApp2024.Models.ViewModel
+@using SysGeSeApp2024.Models.Enums
+@model UnidadeViewModel
+@{
+    ViewBag.Title = "Incluir";
+}
+<form asp-controller="Unidade" asp-action="Incluir" class="row p1">
+    <div class="card p-0">
+        <div class="card-header p-2">
+            <span class="prn-font-card-header fw-semibold">Cadastro de Unidades</span>
+
+            <a asp-controller="Unidade" asp-action="Index" class="float-end btn btn-outline-danger mr-1 btn-sm"><i class="fa-duotone fa-ban"></i>&nbsp; Cancelar</a>
+            <button type="submit" class="float-end btn mr-1 btn-outline-primary  btn-sm"><i class="fa-duotone fa-floppy-disk"></i>&nbsp;Salvar</button>
+
+        </div>
+        <div class="card-body">
+
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <label asp-for="Nome" class="form-label">Unidade*</label>
+                    <input asp-for="Nome" class="form-control form-control-sm" placeholder="Digite o NOME da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                    <span asp-validation-for="Nome" class="text-danger"></span>
+                  
+
+                </div>
+                 <div class="col-lg-3">
+                    <label asp-for="Cnpj" class="form-label">CNPJ</label>
+                    <input asp-for="Cnpj" class="form-control form-control-sm" placeholder="Digite o CNPJ da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                   
+
+
+                </div>
+                <div class="col-lg-3">
+                    <label asp-for="Ie" class="form-label">IE</label>
+                    <input asp-for="Ie" class="form-control form-control-sm" placeholder="Digite o IE da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                    
+
+
+                </div>
+
+            </div>
+           
+          
+            <div class="row mt-2">
+                <div class="col-lg-2">
+                    <label asp-for="Cep" class="form-label">CEP</label>
+                    <input asp-for="Cep" class="form-control form-control-sm" placeholder="Digite o CEP da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                   
+                </div>
+                <div class="col-lg-7">
+                    <label asp-for="Logradouro" class="form-label">Logradouro*</label>
+                    <input asp-for="Logradouro" class="form-control form-control-sm" placeholder="Digite o LOGRADOURO(rua, avenida, travaessa) da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                    <span asp-validation-for="Logradouro" class="text-danger"></span>
+                </div>
+                <div class="col-lg-3">
+                    <label asp-for="Bairro" class="form-label">Bairro*</label>
+                    <input asp-for="Bairro" class="form-control form-control-sm" placeholder="Digite o BAIRRO da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                    <span asp-validation-for="Bairro" class="text-danger"></span>
+                </div>
+               
+
+            </div>
+            <div class="row mt-2">
+               
+                <div class="col-lg-9">
+                    <label asp-for="Cidade" class="form-label">Cidade*</label>
+                    <input asp-for="Cidade" class="form-control form-control-sm" placeholder="Digite a CIDADE da unidade" data-val="True" onkeyup="maiuscula(this);" />
+                    <span asp-validation-for="Cidade" class="text-danger"></span>
+                </div>
+                <div class="col-lg-3">
+                    <label asp-for="Estado" class="form-label form-label-sm">Estado</label>
+                    <select id="uf" asp-for="Estado" asp-items="@(new SelectList(Model.Estados, "Uf", "Descricao"))" data-val="True" class="form-control form-control-sm form-select">
+                        <option value="">Escolha o Estado</option>
+                    </select>
+                    <span asp-validation-for="Estado" class="text-danger"></span>
+
+                </div>
+               
+            </div>
+
+            <div class="row mt-2">
+
+                
+                <div class="col-lg-3">
+                    <label asp-for="Telefone" class="form-label">Telefone</label>
+                    <input asp-for="Telefone" class="form-control form-control-sm" placeholder="Digite a TELEFONE FIXO da unidade" data-val="True" onkeyup="maiuscula(this);" />
+
+                </div>
+                <div class="col-lg-3">
+                    <label asp-for="Celular" class="form-label">Celular</label>
+                    <input asp-for="Celular" class="form-control form-control-sm" placeholder="Digite a CELULAR da unidade" data-val="True" onkeyup="maiuscula(this);" />
+
+                </div>
+
+                <div class="col-lg-6">
+                    <label asp-for="Email" class="form-label">E-Mail</label>
+                    <input asp-for="Email" class="form-control form-control-sm" placeholder="Digite a EMAIL da unidade" data-val="True" onkeyup="minuscula(this);" />
+                  
+
+                </div>
+            </div>
+            <div class="row mt-2">
+
+
+                <div class="col-lg-12">
+                    <label asp-for="Observacoes" class="form-label">Observações</label>
+                    <textarea rows="4" cols="50" asp-for="Observacoes" class="form-control form-control-sm" placeholder="Digite a Descrição " data-val="True" onkeyup="maiuscula(this);"></textarea>
+                </div>
+               
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</form>

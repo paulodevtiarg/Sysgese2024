@@ -1,0 +1,65 @@
+﻿@using SysGeSeApp2024.Models.ViewModel
+@using SysGeSeApp2024.Models.Enums
+@model FuncaoViewModel
+@{
+    ViewBag.Title = "Detalhar";
+}
+
+<form asp-controller="Funcao" asp-action="Incluir" class="row p1">
+    <div class="card p-0">
+        <div class="card-header p-2">
+            <span class="prn-font-card-header fw-semibold">Detalhes de Função</span>
+
+            <a asp-controller="Funcao" asp-action="Index" class="float-end btn  btn-outline-info mr-1 btn-sm"><i class="fa-duotone fa-arrow-left"></i>&nbsp; Voltar</a>
+            <a asp-controller="Funcao" asp-action="Editar" class="float-end btn btn-outline-primary mr-1 btn-sm" asp-route-id="@Model.Id"><i class="fa-duotone fa-pen-to-square"></i>&nbsp; Editar</a>
+
+
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="row mb-2">
+                <label asp-for="Id" class="col-md-2 col-form-label col-form-label-sm">ID</label>
+                <div class="col-md-2">
+                    <input asp-for="Id" class="form-control form-control-sm" disabled>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <label asp-for="DataCad" class="col-md-2 col-form-label col-form-label-sm">Cadastro</label>
+                <div class="col-md-4">
+                    <input asp-for="DataCad" class="form-control form-control-sm" disabled>
+                </div>
+                
+            </div>
+            <div class="row mb-2">
+                <label asp-for="DataAlt" class="col-md-2 col-form-label col-form-label-sm">Alteração</label>
+                <div class="col-md-4">
+                    <input asp-for="DataAlt" class="form-control form-control-sm" disabled>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label asp-for="Status" class="col-md-2 col-form-label col-form-label-sm">Status</label>
+                <div class="col-md-4">
+                 
+                        <input for="Status" class="form-control form-control-sm" disabled value="@((Model.Status == 1) ? "ATIVO": "BLOQUEADO")">
+                    
+                    
+                </div>
+            </div>
+            <div class="row mb-2">
+                <label asp-for="Descricao" class="col-md-2 col-form-label col-form-label-sm">Descrição</label>
+                <div class="col-md-10">
+                    <input asp-for="Descricao" class="form-control form-control-sm" disabled>
+                </div>
+            </div>
+            
+            
+
+
+        </div>
+
+    </div>
+
+</form>
