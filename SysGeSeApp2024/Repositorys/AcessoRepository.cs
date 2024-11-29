@@ -9,19 +9,19 @@ namespace SysGeSeApp2024.Repositorys
     {
         public AcessoRepository(SysGeseDbContext context):base(context) { }
 
-        public async Task<(List<Acesso>? Acessos, int QtdTotalItens)> ObterAcessos(string tabdescricao,string perfil, sbyte status, string ordenarPor, string tipoOrdenacao, int paginaAtual, int qtdItensPagina)
+        public async Task<(List<Acesso>? Acessos, int QtdTotalItens)> ObterAcessos(int? tabelaId,int? perfilId, sbyte status, string ordenarPor, string tipoOrdenacao, int paginaAtual, int qtdItensPagina)
         {
             IQueryable<Acesso> query = _db.Acessos.AsNoTracking();
 
 
-            if (!string.IsNullOrEmpty(tabdescricao))
+            if (tabelaId.HasValue && tabelaId.Value > 0)
             {
-                query = query.Where(p => p.Tabela.TabelaDesc.Equals(tabdescricao));
+                query = query.Where(p => p.Tabela.Id == tabelaId);
             }
 
-            if (!string.IsNullOrEmpty(perfil))
+            if (perfilId.HasValue && perfilId.Value > 0)
             {
-                query = query.Where(p => p.Perfil.Descricao.Equals(perfil));
+                query = query.Where(p => p.Perfil.Id == perfilId);
             }
 
             if (status != 2)

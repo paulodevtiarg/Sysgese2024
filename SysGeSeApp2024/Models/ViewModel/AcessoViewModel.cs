@@ -2,23 +2,24 @@
 {
     public class AcessoListViewModel : BaseListViewModel
     {
-        public AcessoListViewModel(List<AcessoViewModel>? acessos, List<TabelaViewModel>? tabelas, List<PerfilViewModel>? perfis, sbyte status, int totalItens, int paginaAtual, int qtdItensPagina) : base(totalItens, paginaAtual, qtdItensPagina)
+        public AcessoListViewModel(List<AcessoViewModel>? acessos, List<TabelaViewModel>? tabelas, List<PerfilViewModel>? perfis, int? tabId, int? perfilId, sbyte status, int totalItens, int paginaAtual, int qtdItensPagina) : base(totalItens, paginaAtual, qtdItensPagina)
         {
             Acessos = acessos;
             TotalItens = totalItens;
             Status = status;
             Perfis = perfis;
             Tabelas = tabelas;
+            IdTabela = tabId;
+            IdPerfil = perfilId;
             
         }
         public int TotalItens { get; set; }
         public sbyte? Status { get; set; }
-        public int IdTabela { get; set; }
+        public int? IdTabela { get; set; }
         public virtual Tabela? Tabela { get; set; }
 
-        public string? TabelaDesc { get; set; }
-        public string? PerfilDesc { get; set; }
-        public int IdPerfil { get; set; }
+      
+        public int? IdPerfil { get; set; }
         public virtual Perfil? Perfil { get; set; }
         public List<AcessoViewModel>? Acessos { get; set; }
 

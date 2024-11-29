@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SysGeSeApp2024",
+    "\\SysGeSeApp2024\\Controllers"
   ],
+  "SelectedNode": "\\SysGeSeApp2024\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

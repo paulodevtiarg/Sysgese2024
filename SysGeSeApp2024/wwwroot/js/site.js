@@ -25,25 +25,58 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
 
-function limparInputs() {
+//function limparInputs() {
+//    // Obtém todos os elementos de entrada (inputs) usando document.querySelectorAll
+//    var inputs = document.querySelectorAll('input');
+
+//    //Objem o nome do titulo, que serve como o nome do controller
+//    var controller = document.getElementById("titulo").innerHTML;
+
+//    // Itera sobre os elementos e define o valor de cada input como uma string vazia
+//    inputs.forEach(function (input) {
+//        input.value = '';
+//    });
+//    //variavel auxiliar valor que recebe vazia
+//    var valor = "TODOS";
+
+//    document.getElementById('Status').value = valor;
+
+
+//    //chama a index novamente para carregar as listas e atualizar a página, de acordo com seu controller
+//    //que é justamente o titulo da pagina
+//    window.location.href = '/' + controller + '/Index';
+//}
+function limparInputsESelects() {
     // Obtém todos os elementos de entrada (inputs) usando document.querySelectorAll
     var inputs = document.querySelectorAll('input');
 
-    //Objem o nome do titulo, que serve como o nome do controller
-    var controller = document.getElementById("titulo").innerHTML;
-
-    // Itera sobre os elementos e define o valor de cada input como uma string vazia
+    // Itera sobre os inputs e define o valor de cada input como uma string vazia
     inputs.forEach(function (input) {
         input.value = '';
     });
-    //variavel auxiliar valor que recebe vazia
-    var valor = "TODOS";
 
+    // Obtém todos os elementos de seleção (selects)
+    var selects = document.querySelectorAll('select');
+
+    // Itera sobre os selects e define o valor selecionado para o primeiro <option> com "selected"
+    selects.forEach(function (select) {
+        var firstOption = select.querySelector('option[selected]');
+        if (firstOption) {
+            select.value = firstOption.value;
+        } else {
+            // Caso nenhuma opção tenha "selected", seleciona a primeira opção
+            select.selectedIndex = 0;
+        }
+    });
+
+    // Variável auxiliar para o status
+    var valor = "TODOS";
     document.getElementById('Status').value = valor;
 
-    
-    //chama a index novamente para carregar as listas e atualizar a página, de acordo com seu controller
-    //que é justamente o titulo da pagina
+    // Obtém o nome do título, que serve como o nome do controller
+    var controller = document.getElementById("titulo").innerHTML;
+
+    // Redireciona para a index novamente para carregar as listas e atualizar a página
     window.location.href = '/' + controller + '/Index';
 }
 function maiuscula(z) {
