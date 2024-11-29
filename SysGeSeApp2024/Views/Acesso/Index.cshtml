@@ -5,6 +5,8 @@
     ViewBag.Title = "Acesso";
    
 }
+
+
 <form asp-controller="Acesso" asp-action="Index" class="row p1">
     <div class="card p-0">
         <div class="card-header p-2">
@@ -21,13 +23,17 @@
                 <div class="col-lg-4">
                     <label asp-for="IdTabela" class="form-label form-label-sm">Descrição da Tabela</label>
                   
-                    <select asp-for="IdTabela" name="tabdescricao" asp-items='new SelectList(Model.Tabelas, "Id", "TabelaDesc")' class="form-select form-control-sm"></select>
+                    <select asp-for="@Model.Tabela.TabelaDesc" name="tabdescricao" asp-items='new SelectList(Model.Tabelas, "Id", "TabelaDesc")' class="form-select form-control-sm"  data-val="True">
+                        <option value="" disabled selected>ESCOLHA UMA TABELA</option>
+                    </select>
 
                 </div>
                   <div class="col-lg-4">
-                    <label asp-for="IdPerfil" class="form-label form-label-sm">Descrição do Perfil</label>
+                    <label asp-for="@Model.Perfil.Descricao" class="form-label form-label-sm">Descrição do Perfil</label>
                   
-                    <select asp-for="IdPerfil" asp-items='new SelectList(Model.Perfis, "Id", "Descricao")' class="form-select form-control-sm"></select>
+                    <select asp-for="IdPerfil" name="perfil" asp-items='new SelectList(Model.Perfis, "Descricao", "Id")' class="form-select form-control-sm"  data-val="True">
+                        <option value="" disabled selected>ESCOLHA UM PERFIL</option>
+                    </select>
 
                 </div>
                 <div class="col-lg-2">
@@ -35,7 +41,7 @@
 
                     <div class="form-group">
                         <label asp-for="Status" class="form-label form-label-sm">Status</label>
-                        <select asp-for="Status" asp-items="Html.GetEnumSelectList<Status>()" class="form-select form-control-sm"></select>
+                        <select asp-for="Status" asp-items="Html.GetEnumSelectList<Status>()" class="form-select form-control-sm"  data-val="True"></select>
 
                     </div>
 

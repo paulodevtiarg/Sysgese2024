@@ -14,10 +14,12 @@
         public int TotalItens { get; set; }
         public sbyte? Status { get; set; }
         public int IdTabela { get; set; }
+        public virtual Tabela? Tabela { get; set; }
 
         public string? TabelaDesc { get; set; }
         public string? PerfilDesc { get; set; }
         public int IdPerfil { get; set; }
+        public virtual Perfil? Perfil { get; set; }
         public List<AcessoViewModel>? Acessos { get; set; }
 
         public List<TabelaViewModel>? Tabelas { get; set; }

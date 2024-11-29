@@ -16,12 +16,12 @@ namespace SysGeSeApp2024.Repositorys
 
             if (!string.IsNullOrEmpty(tabdescricao))
             {
-                query = query.Where(p => p.Tabela.Id.Equals(int.Parse(tabdescricao)));
+                query = query.Where(p => p.Tabela.TabelaDesc.Equals(tabdescricao));
             }
 
             if (!string.IsNullOrEmpty(perfil))
             {
-                query = query.Where(p => p.Perfil.Descricao.Contains(perfil));
+                query = query.Where(p => p.Perfil.Descricao.Equals(perfil));
             }
 
             if (status != 2)
@@ -34,7 +34,7 @@ namespace SysGeSeApp2024.Repositorys
             var lista = await query.
                Include(p=> p.Tabela).
                Include(p=>p.Perfil).
-               OrderBy(p => p.Id).
+               OrderBy(p => p.IdPerfil).
                Skip(paginaAtual * qtdItensPagina).
                Take(qtdItensPagina).ToListAsync();
 

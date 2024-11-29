@@ -5,16 +5,14 @@ using SysGeSeApp2024.Repositorys;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IAcessoRepository, AcessoRepository>();
-builder.Services.AddScoped<IFilltroRepository, FiltroRepository>();
-builder.Services.AddScoped<ISociosV2Repository, SocioV2Repository>();
+
 builder.Services.AddScoped<IEstadoRepository, EstadoRepository>();
 builder.Services.AddScoped<IFuncaoRepository, FuncaoRepository>();
 builder.Services.AddScoped<IPerfilRepository, PerfilRepository>();
 builder.Services.AddScoped<IUnidadeRepository, UnidadeRepository>();
 builder.Services.AddScoped<IServidorRepository, ServidorRepository>();
-builder.Services.AddScoped<IEmpresaRepository, EmpresaRepository>();
 builder.Services.AddScoped<ITabelaRepository, TabelaRepository>();
-builder.Services.AddScoped<IUsuarioFiltroEmpresasRepository, UsuarioFiltroEmpresasRepository>();
+
 
 
 builder.Services.AddDbContext<SysGeseDbContext>(options =>

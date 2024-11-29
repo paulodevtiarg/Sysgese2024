@@ -14,16 +14,9 @@ namespace SysGeSeApp2024.Data
 
         public DbSet<Estado> Estados { get; set; }
 
-        public DbSet<FiltroModel> Filtros { get; set; }
-
+      
         public DbSet<Perfil> Perfis { get; set; }
-        public DbSet<SociosV2Model> Socios2 { get; set; }
-
-        public DbSet<UsuarioFiltroEmpresas> UsuariosFiltrosEmpresas { get; set; }
-
-        public DbSet<SociosModel> Socios { get; set; }
-
-        public DbSet<EmpresaModel> Empresas { get; set; }
+       
 
         public DbSet<Tabela> Tabelas { get; set; }
         public DbSet<Acesso> Acessos { get; set; }
