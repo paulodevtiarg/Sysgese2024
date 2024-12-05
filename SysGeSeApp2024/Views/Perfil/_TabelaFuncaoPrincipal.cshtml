@@ -3,7 +3,6 @@
 
         <tr>
             <th class="text-center fw-semibold prn-border-columns prn-border-columns-theader-left ">Ativo?</th>
-            <th class="text-center fw-semibold prn-border-columns">Id</th>
             <th class="text-center fw-semibold prn-border-columns">Perfil</th>
             <th class="text-center fw-semibold prn-border-columns prn-border-columns-left prn-border-columns-theader">Ação</th>
 
@@ -22,7 +21,7 @@
                 {
                     <td style="width:5%;" class=" prn-border-columns prn-border-columns-left  text-center align-middle"> <a asp-controller="Perfil" asp-action="AtivarDesativar" asp-route-id="@item.Id"> <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="@((item.Status == 1) ? "ATIVO" : "BLOQUEADO")" class="fs-5 text-danger fa-duotone fa-face-sad-tear"></i></a></td>
                 }
-                <th class="prn-border-columns text-center align-middle" scope="row" style="width:5%;">@item.Id</th>
+            
                 <td class="prn-border-columns text-rigth align-middle">@item.Descricao</td>
                
                 <td class="text-center prn-border-columns" style="width:10%;">

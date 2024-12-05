@@ -48,7 +48,7 @@
             <div class="row mt-2">
                 <div class="col-lg-12">
 
-                    <button type="submit" class="float-end btn btn-outline-success mr-1 btn-sm"><i class="fa-duotone fa-magnifying-glass"></i>&nbsp; Pesquisar</button>
+                    <!--    <button type="submit" class="float-end btn btn-outline-success mr-1 btn-sm"><i class="fa-duotone fa-magnifying-glass"></i>&nbsp; Pesquisar</button>-->
 
                     <div class="dropdown">
                         <button class="float-end btn btn-outline-secondary mr-1 btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"><i class="fa-duotone fa-download"></i>&nbsp;Exportar</button>
@@ -103,6 +103,12 @@
                                     this.form.submit();
                                 });
                                 document.getElementById("Status").addEventListener("change", function () {
+                                    this.form.submit();
+                                });
+                                document.getElementById("IdTabela").addEventListener("change", function () {
+                                    this.form.submit();
+                                });
+                                document.getElementById("IdPerfil").addEventListener("change", function () {
                                     this.form.submit();
                                 });
                               
