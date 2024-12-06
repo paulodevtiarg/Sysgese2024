@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SysGeSeApp2024.Converters;
 using SysGeSeApp2024.Interfaces;
+using SysGeSeApp2024.Models;
 using SysGeSeApp2024.Models.ViewModel;
 using SysGeSeApp2024.Repositorys;
 
@@ -32,6 +33,60 @@ namespace SysGeSeApp2024.Controllers
 
             var lista = AcessoConverter.ToViewModel(Acessos);
             return View(new AcessoListViewModel(lista, tabelas, perfis, tabelaId, perfilId, status, QtdTotalItens, paginaAtual, qtdItensPagina));
+
+        }
+
+        public async Task<IActionResult> Incluir()
+        {
+            //mandas as tabelas para montar os combobox de escolha
+            var tabelas = TabelaConverter.ToViewModel(await _tabelaRepostory.ObterTodos());
+            var perfis = PerfilConverter.ToViewModel(await _perfilRepostory.ObterTodos());
+
+            var acessoViewModel = AcessoConverter.ToViewModel(new Acesso(), tabelas, perfis);
+
+            return View(acessoViewModel);
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> Incluir(AcessoViewModel acessoVM)
+        {
+
+            if (ModelState.IsValid && acessoVM != null)
+            {
+                //verificar se ja existe um acesso para a tabela informada
+               
+                if (await _acessoRepository.VerificaAcesso(acessoVM.IdPerfil, acessoVM.IdTabela))
+                {
+                    TempData["Error"] = "Ja existe um ACESSO para esse perfil com essa tabela";
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    var acessoNovo = AcessoConverter.ToModel(acessoVM);
+
+                    try
+                    {
+                        await _acessoRepository.Adicionar(acessoNovo);
+                        TempData["Success"] = "Registro cadastrado com sucesso!";
+                        return RedirectToAction("Index");
+                    }
+                    catch (Exception)
+                    {
+                        TempData["Error"] = "Houve um erro ao adicionar o REGISTRO, tente novamente";
+                        return RedirectToAction("Index");
+                    }
+                }
+
+
+
+
+            }
+            //mandas as tabelas para montar os combobox de escolha
+            var tabelas = TabelaConverter.ToViewModel(await _tabelaRepostory.ObterTodos());
+            var perfis = PerfilConverter.ToViewModel(await _perfilRepostory.ObterTodos());
+            acessoVM.Tabelas = tabelas;
+            acessoVM.Perfis = perfis;
+            return View(acessoVM);
 
         }
         public async Task<IActionResult> AtivarDesativar(int id)

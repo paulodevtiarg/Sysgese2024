@@ -1,4 +1,7 @@
-﻿namespace SysGeSeApp2024.Models.ViewModel
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace SysGeSeApp2024.Models.ViewModel
 {
     public class AcessoListViewModel : BaseListViewModel
     {
@@ -33,23 +36,28 @@
     public class AcessoViewModel
     {
         public int Id { get; set; }
-
-        public int IdTabela { get; set; }
+        [Required(ErrorMessage = "É necessário escolher uma TABELA")]
+        public int? IdTabela { get; set; }
         public virtual Tabela? Tabela { get; set; }
-        public sbyte? TabelaVisualizar { get; set; }
-        public sbyte? TabelaInserir { get; set; }
-        public sbyte? TabelaAlterar { get; set; }
+        public bool TabelaVisualizar { get; set; } = false;
+        public bool TabelaInserir { get; set; } = false;
+        public bool TabelaAlterar { get; set; } = false;
 
-        public sbyte? TabelaExcluir { get; set; }
+        public bool TabelaExcluir { get; set; } = false;
 
         public string? TabelaObservacao { get; set; }
-        public int IdPerfil { get; set; }
+        [Required(ErrorMessage = "É necessário escolher um PERFIL")]
+        public int? IdPerfil { get; set; }
         public virtual Perfil? Perfil { get; set; }
 
 
         public sbyte? Status { get; set; }
+
+        public string StatusString { get;set; }
         public string? DataCad { get; set; }
         public string? DataAlt { get; set; }
+
+      
 
         public List<TabelaViewModel>? Tabelas { get; set; }
 

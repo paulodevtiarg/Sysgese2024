@@ -3,7 +3,7 @@
     <thead class="prn-font-table-header">
 
         <tr>
-            <th class="text-center fw-semibold prn-border-columns prn-border-columns-theader-left">ID</th>
+           
             <th class="text-center fw-semibold prn-border-columns">Ativo?</th>
 
             <th class="text-center fw-semibold prn-border-columns">Tabela</th>
@@ -22,7 +22,7 @@
             
 
             <tr>
-                <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">@item.Perfil.Id</td>
+                
                 @if (item.Status == 1)
                 {
                     <td style="width:5%;" class=" prn-border-columns prn-border-columns-left text-center align-middle">  <a asp-controller="Acesso" asp-action="AtivarDesativar" asp-route-id="@item.Id"> <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="@((item.Status == 1) ? "ATIVO" : "BLOQUEADO")" class="fs-5 text-primary fa-duotone fa-face-laugh-wink"></i> </a></td>
@@ -37,25 +37,16 @@
                 <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
                     <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
                         <i data-bs-toggle="tooltip" data-bs-placement="top"
-                           data-bs-title="@(item.TabelaVisualizar == 1 ? "SIM" : "NÃO")"
-                           class="fs-5 @(item.TabelaVisualizar == 1 ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
+                           data-bs-title="@(item.TabelaVisualizar  ? "SIM" : "NÃO")"
+                           class="fs-5 @(item.TabelaVisualizar ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
                         </i>
                     </a>
                 </td>
                 <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
                     <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
                         <i data-bs-toggle="tooltip" data-bs-placement="top"
-                           data-bs-title="@(item.TabelaInserir == 1 ? "SIM" : "NÃO")"
-                           class="fs-5 @(item.TabelaInserir == 1 ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
-                        </i>
-                    </a>
-                </td>
-
-                <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
-                    <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
-                        <i data-bs-toggle="tooltip" data-bs-placement="top"
-                           data-bs-title="@(item.TabelaAlterar == 1 ? "SIM" : "NÃO")"
-                           class="fs-5 @(item.TabelaAlterar == 1 ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
+                           data-bs-title="@(item.TabelaInserir  ? "SIM" : "NÃO")"
+                           class="fs-5 @(item.TabelaInserir ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
                         </i>
                     </a>
                 </td>
@@ -63,8 +54,17 @@
                 <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
                     <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
                         <i data-bs-toggle="tooltip" data-bs-placement="top"
-                           data-bs-title="@(item.TabelaExcluir == 1 ? "SIM" : "NÃO")"
-                           class="fs-5 @(item.TabelaExcluir == 1 ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
+                           data-bs-title="@(item.TabelaAlterar ? "SIM" : "NÃO")"
+                           class="fs-5 @(item.TabelaAlterar  ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
+                        </i>
+                    </a>
+                </td>
+
+                <td style="width:5%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
+                    <a asp-controller="Acesso" asp-action="AcessoPermissao" asp-route-id="@item.Id">
+                        <i data-bs-toggle="tooltip" data-bs-placement="top"
+                           data-bs-title="@(item.TabelaExcluir  ? "SIM" : "NÃO")"
+                           class="fs-5 @(item.TabelaExcluir  ? "text-primary fa-duotone fa-face-laugh-wink" : "text-danger fa-duotone fa-face-sad-tear")">
                         </i>
                     </a>
                 </td>

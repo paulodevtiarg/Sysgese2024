@@ -32,6 +32,7 @@ namespace SysGeSeApp2024.Controllers
             return View(perfilViewModel);
 
         }
+       
         [HttpPost]
         public async Task<IActionResult> Incluir(PerfilViewModel? perfilVM)
         {

@@ -39,6 +39,21 @@ namespace SysGeSeApp2024.Converters
 
         }
 
+        public static AcessoViewModel? ToViewModel(Acesso acesso, List<TabelaViewModel> tabelas, List<PerfilViewModel> perfis)
+        {
+            AcessoViewModel acessoViewModel = ToViewModel(acesso);
+            if (acessoViewModel != null)
+            {
+
+                acessoViewModel.Tabelas = tabelas;
+                acessoViewModel.Perfis = perfis;
+            }
+            acessoViewModel.DataCad = DateTime.Now.ToString("dd/MM/yyyy");
+            acessoViewModel.StatusString = "ATIVO";
+            return acessoViewModel;
+
+        }
+
         public static Acesso ToModel(AcessoViewModel acessoVM)
         {
             DateTime dataCad;

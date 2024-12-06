@@ -40,5 +40,17 @@ namespace SysGeSeApp2024.Repositorys
 
             return (lista, qtdTotalItens);
         }
+
+        public async Task<bool> VerificaAcesso(int? idPerfil, int? idTabela)
+        {
+            if(_db.Acessos.Where(x=>x.IdPerfil == idPerfil && x.IdTabela == idTabela).Count() > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

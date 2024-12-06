@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\preciso\source\repos\paulodevtiarg\Sysgese2024\SysGeSeApp2024
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Incluir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXEluY2x1aXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
