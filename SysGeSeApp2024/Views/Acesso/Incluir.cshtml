@@ -9,7 +9,7 @@
         <div class="card-header p-2">
             <span class="prn-font-card-header fw-semibold">Cadastro de Acesso</span>
 
-            <a asp-controller="Perfil" asp-action="Index" class="float-end btn btn-outline-danger mr-1 btn-sm"><i class="fa-duotone fa-ban"></i>&nbsp; Cancelar</a>
+            <a asp-controller="Acesso" asp-action="Index" class="float-end btn btn-outline-danger mr-1 btn-sm"><i class="fa-duotone fa-ban"></i>&nbsp; Cancelar</a>
             <button type="submit" class="float-end btn mr-1 btn-outline-primary  btn-sm"><i class="fa-duotone fa-floppy-disk"></i>&nbsp;Salvar</button>
 
         </div>
@@ -25,15 +25,21 @@
                     <span asp-validation-for="IdPerfil" class="text-danger"></span>
 
                 </div>
-                <div class="col-lg-6">
+                @* <div class="col-lg-6">
                     <label asp-for="IdTabela" class="form-label form-label-sm">Tabela</label>
 
                     <select asp-for="IdTabela" asp-items='new SelectList(Model.Tabelas, "Id", "TabelaDesc")' class="form-select form-control-sm" data-val="True">
                         <option value=""  selected>ESCOLHA UMA TABELA</option>
                     </select>
                     <span asp-validation-for="IdTabela" class="text-danger"></span>
+                </div> *@
+                <div class="col-lg-6">
+                    <label asp-for="IdTabela" class="form-label form-label-sm">Tabela</label>
+                    <select asp-for="IdTabela" class="form-select form-control-sm" disabled>
+                        <option value="" selected>ESCOLHA UMA TABELA</option>
+                    </select>
+                    <span asp-validation-for="IdTabela" class="text-danger"></span>
                 </div>
-              
 
             </div>
             <div class="row mt-3">
@@ -104,5 +110,45 @@
         </div>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#IdPerfil').on('change', function () {
+                var idPerfil = $(this).val();
 
+                // Limpar as opções atuais do select de tabelas
+                $('#IdTabela').prop('disabled', true);
+                $('#IdTabela').empty().append('<option value="">ESCOLHA UMA TABELA</option>');
+
+                if (idPerfil) {
+                    $.ajax({
+                        url: '/Acesso/ObterTabelasDisponiveis', // Atualize com a rota correta
+                        type: 'GET',
+                        data: { idPerfil: idPerfil },
+                        success: function (data) {
+                            if (data && data.length > 0) {
+                                // Popula o select de tabelas se houver opções
+                                $.each(data, function (i, tabela) {
+                                    $('#IdTabela').append($('<option>', {
+                                        value: tabela.id,
+                                        text: tabela.tabelaDesc
+                                    }));
+                                });
+                                // Habilitar o select após o carregamento
+                                $('#IdTabela').prop('disabled', false);
+                            } else {
+                                // Exibir alerta se não houver tabelas disponíveis
+                                alert('TODAS AS TABELAS JÁ ESTÃO PRESENTES NESTE PERFIL.');
+                                
+                            }
+                        },
+                        error: function () {
+                            alert('Erro ao carregar tabelas.');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </form>
+

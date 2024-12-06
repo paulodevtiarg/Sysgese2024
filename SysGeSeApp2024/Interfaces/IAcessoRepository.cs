@@ -5,7 +5,7 @@ namespace SysGeSeApp2024.Interfaces
     {
         Task<(List<Acesso>? Acessos, int QtdTotalItens)> ObterAcessos(int? tabelaId,int? perfilId, sbyte status, string ordenarPor, string tipoOrdenacao, int paginaAtual, int qtdItensPagina);
         Task<bool> VerificaAcesso(int? idPerfil, int? idTabela);
+        Task<List<Acesso>?> ObterTabelasPorPerfil(int idPerfil);
 
-       
     }
 }

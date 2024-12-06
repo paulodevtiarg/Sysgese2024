@@ -33,7 +33,7 @@ namespace SysGeSeApp2024.Controllers
 
             var lista = AcessoConverter.ToViewModel(Acessos);
             return View(new AcessoListViewModel(lista, tabelas, perfis, tabelaId, perfilId, status, QtdTotalItens, paginaAtual, qtdItensPagina));
-
+            
         }
 
         public async Task<IActionResult> Incluir()
@@ -47,6 +47,22 @@ namespace SysGeSeApp2024.Controllers
             return View(acessoViewModel);
 
         }
+
+        public async Task<IActionResult> ObterTabelasDisponiveis(int idPerfil)
+        {
+            // Obtenha as tabelas já associadas ao perfil
+            var tabelasAssociadas = await _acessoRepository.ObterTabelasPorPerfil(idPerfil);
+
+            // Filtre as tabelas que ainda não estão associadas
+            var tabelasDisponiveis = await _tabelaRepostory.ObterTodos();
+            var tabelasFiltradas = tabelasDisponiveis
+                .Where(t => !tabelasAssociadas.Any(ta => ta.IdTabela == t.Id))
+                .ToList();
+
+            return Json(tabelasFiltradas.Select(t => new { t.Id, t.TabelaDesc }));
+        }
+
+
         [HttpPost]
         public async Task<IActionResult> Incluir(AcessoViewModel acessoVM)
         {

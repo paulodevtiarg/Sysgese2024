@@ -24,7 +24,7 @@ namespace SysGeSeApp2024.Models
         public bool TabelaExcluir { get; set; } = false;
 
         [Column("TABELA_OBS")]
-        public string TabelaObservacao { get; set; }
+        public string? TabelaObservacao { get; set; }
 
         [Column("PERFIL_ID")]
         [ForeignKey("Perfil")]

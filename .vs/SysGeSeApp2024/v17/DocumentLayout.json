@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\repositorys\\acessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\repositorys\\acessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\views\\acesso\\incluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\views\\acesso\\incluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\repositorys\\acessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\repositorys\\acessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\models\\acesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\models\\acesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\converters\\acessoconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\converters\\acessoconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\interfaces\\iacessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\interfaces\\iacessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\models\\viewmodel\\acessoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\models\\viewmodel\\acessoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\views\\acesso\\incluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\views\\acesso\\incluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\views\\acesso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\views\\acesso\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\views\\perfil\\incluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\views\\perfil\\incluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\interfaces\\iacessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\interfaces\\iacessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\models\\viewmodel\\perfilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\models\\viewmodel\\perfilviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\repositorys\\tabelarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\repositorys\\tabelarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 453,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,80 +86,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Acesso.cs",
-              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Models\\Acesso.cs",
-              "RelativeDocumentMoniker": "SysGeSeApp2024\\Models\\Acesso.cs",
-              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Models\\Acesso.cs",
-              "RelativeToolTip": "SysGeSeApp2024\\Models\\Acesso.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAcwB4AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:23:20.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AcessoConverter.cs",
-              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Converters\\AcessoConverter.cs",
-              "RelativeDocumentMoniker": "SysGeSeApp2024\\Converters\\AcessoConverter.cs",
-              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Converters\\AcessoConverter.cs",
-              "RelativeToolTip": "SysGeSeApp2024\\Converters\\AcessoConverter.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAgwFIAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:23:06.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PerfilViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Models\\ViewModel\\PerfilViewModel.cs",
-              "RelativeDocumentMoniker": "SysGeSeApp2024\\Models\\ViewModel\\PerfilViewModel.cs",
-              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Models\\ViewModel\\PerfilViewModel.cs",
-              "RelativeToolTip": "SysGeSeApp2024\\Models\\ViewModel\\PerfilViewModel.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAcwBoAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:11:41.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "AcessoViewModel.cs",
               "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Models\\ViewModel\\AcessoViewModel.cs",
               "RelativeDocumentMoniker": "SysGeSeApp2024\\Models\\ViewModel\\AcessoViewModel.cs",
               "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Models\\ViewModel\\AcessoViewModel.cs",
               "RelativeToolTip": "SysGeSeApp2024\\Models\\ViewModel\\AcessoViewModel.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAWwDEAAAATAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:11:33.573Z",
+              "WhenOpened": "2024-12-06T17:05:31.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Incluir.cshtml",
-              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Incluir.cshtml",
-              "RelativeDocumentMoniker": "SysGeSeApp2024\\Views\\Acesso\\Incluir.cshtml",
-              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Incluir.cshtml",
-              "RelativeToolTip": "SysGeSeApp2024\\Views\\Acesso\\Incluir.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-06T16:10:19.386Z",
+              "DocumentIndex": 3,
+              "Title": "Acesso.cs",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Models\\Acesso.cs",
+              "RelativeDocumentMoniker": "SysGeSeApp2024\\Models\\Acesso.cs",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Models\\Acesso.cs",
+              "RelativeToolTip": "SysGeSeApp2024\\Models\\Acesso.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowBoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T17:05:14.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "TabelaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Repositorys\\TabelaRepository.cs",
+              "RelativeDocumentMoniker": "SysGeSeApp2024\\Repositorys\\TabelaRepository.cs",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Repositorys\\TabelaRepository.cs",
+              "RelativeToolTip": "SysGeSeApp2024\\Repositorys\\TabelaRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:43:18.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AcessoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Repositorys\\AcessoRepository.cs",
+              "RelativeDocumentMoniker": "SysGeSeApp2024\\Repositorys\\AcessoRepository.cs",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Repositorys\\AcessoRepository.cs",
+              "RelativeToolTip": "SysGeSeApp2024\\Repositorys\\AcessoRepository.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAYwCwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:40:41.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAcessoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Interfaces\\IAcessoRepository.cs",
+              "RelativeDocumentMoniker": "SysGeSeApp2024\\Interfaces\\IAcessoRepository.cs",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Interfaces\\IAcessoRepository.cs",
+              "RelativeToolTip": "SysGeSeApp2024\\Interfaces\\IAcessoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:40:12.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "SysGeSeApp2024\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "SysGeSeApp2024\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T16:39:56.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Incluir.cshtml",
-              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Perfil\\Incluir.cshtml",
-              "RelativeDocumentMoniker": "SysGeSeApp2024\\Views\\Perfil\\Incluir.cshtml",
-              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Perfil\\Incluir.cshtml",
-              "RelativeToolTip": "SysGeSeApp2024\\Views\\Perfil\\Incluir.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Incluir.cshtml",
+              "RelativeDocumentMoniker": "SysGeSeApp2024\\Views\\Acesso\\Incluir.cshtml",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Incluir.cshtml",
+              "RelativeToolTip": "SysGeSeApp2024\\Views\\Acesso\\Incluir.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-06T16:10:10.237Z",
+              "WhenOpened": "2024-12-06T16:34:20.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Index.cshtml",
+              "RelativeDocumentMoniker": "SysGeSeApp2024\\Views\\Acesso\\Index.cshtml",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Index.cshtml",
+              "RelativeToolTip": "SysGeSeApp2024\\Views\\Acesso\\Index.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-06T16:34:12.677Z",
               "EditorCaption": ""
             },
             {
@@ -170,35 +196,9 @@
               "RelativeDocumentMoniker": "SysGeSeApp2024\\Controllers\\AcessoController.cs",
               "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\AcessoController.cs",
               "RelativeToolTip": "SysGeSeApp2024\\Controllers\\AcessoController.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAQwDMAAAAIAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwDUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T15:59:50.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AcessoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Repositorys\\AcessoRepository.cs",
-              "RelativeDocumentMoniker": "SysGeSeApp2024\\Repositorys\\AcessoRepository.cs",
-              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Repositorys\\AcessoRepository.cs",
-              "RelativeToolTip": "SysGeSeApp2024\\Repositorys\\AcessoRepository.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwCwAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T15:57:48.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IAcessoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Interfaces\\IAcessoRepository.cs",
-              "RelativeDocumentMoniker": "SysGeSeApp2024\\Interfaces\\IAcessoRepository.cs",
-              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Interfaces\\IAcessoRepository.cs",
-              "RelativeToolTip": "SysGeSeApp2024\\Interfaces\\IAcessoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T15:56:23.552Z",
+              "WhenOpened": "2024-12-06T16:33:41.206Z",
               "EditorCaption": ""
             }
           ]

@@ -41,6 +41,14 @@ namespace SysGeSeApp2024.Repositorys
             return (lista, qtdTotalItens);
         }
 
+        public async Task<List<Acesso>?> ObterTabelasPorPerfil(int idPerfil)
+        {
+            IQueryable<Acesso> query = _db.Acessos.AsNoTracking();
+
+            var lista = await query.Include(p => p.Tabela).Include(p => p.Perfil).Where(x=>x.IdPerfil == idPerfil).ToListAsync();
+            return lista;
+        }
+
         public async Task<bool> VerificaAcesso(int? idPerfil, int? idTabela)
         {
             if(_db.Acessos.Where(x=>x.IdPerfil == idPerfil && x.IdTabela == idTabela).Count() > 0)
