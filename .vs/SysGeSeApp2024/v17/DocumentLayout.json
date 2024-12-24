@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\paulo\\Desktop\\ProjetosdotNet\\Sisgese2024\\Sysgese2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\paulo\\Desktop\\ProjetosdotNet\\Sisgese2024\\Sysgese2024\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\paulo\\desktop\\projetosdotnet\\sisgese2024\\sysgese2024\\sysgeseapp2024\\converters\\estadoconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\converters\\estadoconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": ".gitignore",
-              "DocumentMoniker": "C:\\Users\\paulo\\Desktop\\ProjetosdotNet\\Sisgese2024\\Sysgese2024\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "C:\\Users\\paulo\\Desktop\\ProjetosdotNet\\Sisgese2024\\Sysgese2024\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAFsAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-12-24T13:09:43.025Z",
+              "Title": "EstadoConverter.cs",
+              "DocumentMoniker": "C:\\Users\\paulo\\Desktop\\ProjetosdotNet\\Sisgese2024\\Sysgese2024\\SysGeSeApp2024\\Converters\\EstadoConverter.cs",
+              "RelativeDocumentMoniker": "SysGeSeApp2024\\Converters\\EstadoConverter.cs",
+              "ToolTip": "C:\\Users\\paulo\\Desktop\\ProjetosdotNet\\Sisgese2024\\Sysgese2024\\SysGeSeApp2024\\Converters\\EstadoConverter.cs",
+              "RelativeToolTip": "SysGeSeApp2024\\Converters\\EstadoConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T13:13:31.732Z",
               "EditorCaption": ""
             }
           ]

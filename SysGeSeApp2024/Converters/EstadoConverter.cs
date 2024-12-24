@@ -6,6 +6,8 @@ namespace SysGeSeApp2024.Converters
     public class EstadoConverter
     {
 
+
+
         public static EstadoViewModel ToViewModel(Estado estado)
         {
             return new EstadoViewModel
