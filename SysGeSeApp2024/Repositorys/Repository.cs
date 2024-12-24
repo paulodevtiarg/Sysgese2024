@@ -43,12 +43,7 @@ namespace SysGeSeApp2024.Repositorys
             return await _debSet.FindAsync(id);
         }
 
-        //public virtual async Task Remover(int id)
-        //{
-        //    _debSet.Remove(new TEntity { Id = id });
-        //    await SaveChanges();
-        //}
-
+   
         public virtual async Task Remover(TEntity entity)
         {
             _debSet.Remove(entity);

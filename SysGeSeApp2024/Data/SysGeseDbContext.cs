@@ -16,7 +16,9 @@ namespace SysGeSeApp2024.Data
 
       
         public DbSet<Perfil> Perfis { get; set; }
+
        
+
 
         public DbSet<Tabela> Tabelas { get; set; }
         public DbSet<Acesso> Acessos { get; set; }

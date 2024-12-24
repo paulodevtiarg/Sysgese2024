@@ -24,6 +24,7 @@ builder.Services.AddDbContext<SysGeseDbContext>(options =>
 
 
 
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

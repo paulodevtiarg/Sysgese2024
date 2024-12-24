@@ -22,6 +22,7 @@ namespace SysGeSeApp2024.Converters
                 Perfil = acesso.Perfil,
                 DataAlt = acesso.DataAltTexto,
                 DataCad = acesso.DataCadTexto
+               
 
             };
         }
@@ -35,6 +36,21 @@ namespace SysGeSeApp2024.Converters
                 acessoViewModel.Tabelas = TabelaConverter.ToViewModel(tabelas);
                 acessoViewModel.Perfis = PerfilConverter.ToViewModel(perfis);
             }
+            return acessoViewModel;
+
+        }
+
+        public static AcessoViewModel? ToViewModel(Acesso acesso, List<TabelaViewModel> tabelas, List<PerfilViewModel> perfis)
+        {
+            AcessoViewModel acessoViewModel = ToViewModel(acesso);
+            if (acessoViewModel != null)
+            {
+
+                acessoViewModel.Tabelas = tabelas;
+                acessoViewModel.Perfis = perfis;
+            }
+            acessoViewModel.DataCad = DateTime.Now.ToString("dd/MM/yyyy");
+            acessoViewModel.StatusString = "ATIVO";
             return acessoViewModel;
 
         }

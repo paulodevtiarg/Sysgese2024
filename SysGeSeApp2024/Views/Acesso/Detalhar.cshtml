@@ -1,0 +1,109 @@
+﻿@using SysGeSeApp2024.Models.ViewModel
+@using SysGeSeApp2024.Models.Enums
+@model AcessoViewModel
+@{
+    ViewBag.Title = "Detalhar";
+}
+
+<form asp-controller="Funcao" asp-action="Incluir" class="row p1">
+    <div class="card p-0">
+        <div class="card-header p-2">
+            <span class="prn-font-card-header fw-semibold">Detalhes de Acesso</span>
+
+            <a asp-controller="Acesso" asp-action="Index" class="float-end btn  btn-outline-info mr-1 btn-sm"><i class="fa-duotone fa-arrow-left"></i>&nbsp; Voltar</a>
+            <a asp-controller="Perfil" asp-action="Editar" class="float-end btn btn-outline-primary mr-1 btn-sm" asp-route-id="@Model.Id"><i class="fa-duotone fa-pen-to-square"></i>&nbsp; Editar</a>
+
+
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="row mb-2">
+                <label asp-for="Id" class="col-md-2 col-form-label col-form-label-sm">ID</label>
+                <div class="col-md-2">
+                    <input asp-for="Id" class="form-control form-control-sm" disabled>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <label asp-for="DataCad" class="col-md-2 col-form-label col-form-label-sm">Cadastro</label>
+                <div class="col-md-4">
+                    <input asp-for="DataCad" class="form-control form-control-sm" disabled>
+                </div>
+
+            </div>
+            <div class="row mb-2">
+                <label asp-for="DataAlt" class="col-md-2 col-form-label col-form-label-sm">Alteração</label>
+                <div class="col-md-4">
+                    <input asp-for="DataAlt" class="form-control form-control-sm" disabled>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <label asp-for="Status" class="col-md-2 col-form-label col-form-label-sm">Status</label>
+                <div class="col-md-4">
+
+                    <input for="Status" class="form-control form-control-sm" disabled value="@((Model.Status == 1) ? "ATIVO": "BLOQUEADO")">
+
+
+                </div>
+            </div>
+                    <div class="row mb-2">
+                        <label asp-for="Tabela" class="col-md-2 col-form-label col-form-label-sm">Tabela</label>
+                        <div class="col-md-4">
+                            <input asp-for="Tabela" class="form-control form-control-sm" value="@Model.Tabela.TabelaDesc" disabled>
+                        </div>
+               
+                    </div>
+
+            <div class="row mb-2">
+                <label asp-for="Tabela" class="col-md-2 col-form-label col-form-label-sm">Permissões</label>
+                <div class="col-md-4">
+                   
+                    
+                    <div class="border rounded" style="padding: 0.11rem !important;">
+                        <div class="form-check form-check-inline">
+                            <input asp-for="TabelaVisualizar" class="form-check-input ml-2" type="checkbox" disabled>
+                            <label class="form-check-label" asp-for="TabelaVisualizar">
+                                Visualizar
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input asp-for="TabelaInserir" class="form-check-input" type="checkbox" disabled>
+                            <label class="form-check-label" asp-for="TabelaInserir">
+                                Incluir
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input asp-for="TabelaAlterar" class="form-check-input" type="checkbox" disabled>
+                            <label class="form-check-label" asp-for="TabelaAlterar">
+                                Alterar
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input asp-for="TabelaExcluir" class="form-check-input" type="checkbox" disabled>
+                            <label class="form-check-label" asp-for="TabelaExcluir">
+                                Excluir
+                            </label>
+                        </div>
+                    </div>
+
+               
+                </div>
+            </div>
+
+
+            <div class="row mb-2">
+                <label asp-for="TabelaObservacao" class="col-md-2 col-form-label col-form-label-sm">Observação</label>
+                <div class="col-md-10">
+                    <textarea rows="6" asp-for="TabelaObservacao" class="form-control form-control-sm" disabled></textarea>
+                </div>
+            </div>
+
+        </div>
+               
+
+    </div>
+
+</form>
