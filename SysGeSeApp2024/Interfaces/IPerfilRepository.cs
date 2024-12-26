@@ -7,7 +7,7 @@ namespace SysGeSeApp2024.Interfaces
     {
 
         Task<(List<Perfil>? Perfis, int QtdTotalItens)> ObterPerfis(string descricao, sbyte status, string ordenarPor, string tipoOrdenacao, int paginaAtual, int qtdItensPagina);
-
+        Task<bool> VerificarUsoPerfil(int? idPerfil);
 
     }
 }

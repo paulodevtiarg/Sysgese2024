@@ -69,6 +69,6 @@ namespace SysGeSeApp2024.Repositorys
             }
         }
 
-        
+       
     }
 }

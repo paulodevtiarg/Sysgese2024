@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 using Org.BouncyCastle.Asn1.Mozilla;
 using SysGeSeApp2024.Converters;
 using SysGeSeApp2024.Interfaces;
@@ -83,9 +84,39 @@ namespace SysGeSeApp2024.Controllers
                 return RedirectToAction("Index");
             }
 
-                      
-
            
+        }
+
+        public async Task<IActionResult>Deletar(int id)
+        {
+           
+            var acesso = await _acessoRepository.ObterPorId(id);
+
+            var acessoApagar = AcessoConverter.ToViewModel(acesso);
+
+            return View(acessoApagar);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult>Deletar(AcessoViewModel acessoVM)
+        {
+            var acesso = await _acessoRepository.ObterAcessoPorId(acessoVM.Id);
+
+         
+                try
+                {
+                    await _acessoRepository.Remover(acesso);
+                    TempData["Success"] = "Registro DELETADO com sucesso";
+                    return RedirectToAction("Index");
+                }
+                catch (Exception)
+                {
+                    TempData["Error"] = "Houve um erro ao DELETAR o registro, tente novamente";
+                    return RedirectToAction("Index");
+                }
+           
+            
         }
 
         public async Task<IActionResult> ObterTabelasDisponiveis(int idPerfil)

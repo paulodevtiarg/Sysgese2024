@@ -34,5 +34,16 @@ namespace SysGeSeApp2024.Repositorys
 
             return (lista, qtdTotalItens);
         }
+        public async Task<bool> VerificarUsoPerfil(int? idPerfil)
+        {
+            if (_db.Servidores.Where(x => x.IdPerfil == idPerfil).Count() > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
