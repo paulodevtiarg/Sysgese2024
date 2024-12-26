@@ -49,8 +49,20 @@ namespace SysGeSeApp2024.Converters
                 acessoViewModel.Tabelas = tabelas;
                 acessoViewModel.Perfis = perfis;
             }
-            acessoViewModel.DataCad = DateTime.Now.ToString("dd/MM/yyyy");
-            acessoViewModel.StatusString = "ATIVO";
+            if(acessoViewModel.DataCad == null)
+            {
+                acessoViewModel.DataCad = DateTime.Now.ToString("dd/MM/yyyy");
+            }
+            if(acessoViewModel.DataAlt == null)
+            {
+                acessoViewModel.DataAlt = DateTime.Now.ToString("dd/MM/yyyy");
+            }
+            
+            if(acessoViewModel.Status == null)
+            {
+                acessoViewModel.StatusString = "ATIVO";
+            }
+           
             return acessoViewModel;
 
         }

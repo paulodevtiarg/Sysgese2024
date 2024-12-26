@@ -5,6 +5,7 @@ using SysGeSeApp2024.Interfaces;
 using SysGeSeApp2024.Models;
 using SysGeSeApp2024.Models.ViewModel;
 using SysGeSeApp2024.Repositorys;
+using System.Diagnostics.Metrics;
 
 namespace SysGeSeApp2024.Controllers
 {
@@ -43,6 +44,48 @@ namespace SysGeSeApp2024.Controllers
 
             return View(acessoViewModel);
 
+        }
+
+        public async Task<IActionResult> Editar(int id)
+        {
+            //mandas as tabelas para montar os combobox de escolha
+            var tabelas = TabelaConverter.ToViewModel(await _tabelaRepostory.ObterTodos());
+            var perfis = PerfilConverter.ToViewModel(await _perfilRepostory.ObterTodos());
+            var acesso = await _acessoRepository.ObterPorId(id);
+
+            var acessoEditar = AcessoConverter.ToViewModel(acesso, tabelas, perfis);
+
+            return View(acessoEditar);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Editar(AcessoViewModel acessoVM)
+        {
+
+            //Precisamos ver se existe um acesso com esses  dois parametros
+            if (await _acessoRepository.VerificaAcesso(acessoVM.IdPerfil, acessoVM.IdTabela))
+            {
+                TempData["Error"] = "Ja existe um ACESSO para esse perfil com a TABELA selecionada";
+                return RedirectToAction("Index");
+            }
+
+            var acessoEditar = AcessoConverter.ToModel(acessoVM);
+
+            try
+            {
+                await _acessoRepository.Atualizar(acessoEditar);
+                TempData["Success"] = "Registro ALTERADO com sucesso";
+                return RedirectToAction("Index");
+            }
+            catch (Exception)
+            {
+                TempData["Error"] = "Houve um erro ao adicionar o registro, tente novamente";
+                return RedirectToAction("Index");
+            }
+
+                      
+
+           
         }
 
         public async Task<IActionResult> ObterTabelasDisponiveis(int idPerfil)
@@ -102,6 +145,8 @@ namespace SysGeSeApp2024.Controllers
             return View(acessoVM);
 
         }
+
+        
         public async Task<IActionResult> AtivarDesativar(int id)
         {
             var obj = await _acessoRepository.ObterPorId(id);
@@ -127,20 +172,25 @@ namespace SysGeSeApp2024.Controllers
             if (field == "TabelaVisualizar" && tab_v.HasValue && obj.TabelaVisualizar == tab_v.Value)
             {
                 obj.TabelaVisualizar = !tab_v.Value;
+                obj.DataAlt = DateTime.Now;
             }
             if (field == "TabelaInserir" && tab_i.HasValue && obj.TabelaInserir == tab_i.Value)
             {
                 obj.TabelaInserir = !tab_i.Value;
+                //alterar a data da alteração
+                obj.DataAlt = DateTime.Now;
             }
 
             if (field == "TabelaAlterar" && tab_a.HasValue && obj.TabelaAlterar == tab_a.Value)
             {
                 obj.TabelaAlterar = !tab_a.Value;
+                obj.DataAlt = DateTime.Now;
             }
 
             if (field == "TabelaExcluir" && tab_e.HasValue && obj.TabelaExcluir == tab_e.Value)
             {
                 obj.TabelaExcluir = !tab_e.Value;
+                obj.DataAlt = DateTime.Now;
             }
 
             try

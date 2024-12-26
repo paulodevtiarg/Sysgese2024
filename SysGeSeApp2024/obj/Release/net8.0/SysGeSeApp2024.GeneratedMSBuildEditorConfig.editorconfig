@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\preciso\Source\Repos\paulodevtiarg\Sysgese2024\SysGeSeApp2024
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/preciso/Source/Repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Detalhar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXERldGFsaGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/preciso/Source/Repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Incluir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXEluY2x1aXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/preciso/Source/Repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/preciso/Source/Repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acoes/Mensagens.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNvZXNcTWVuc2FnZW5zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/preciso/Source/Repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Dadis/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFkaXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/preciso/Source/Repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Funcao/Deletar.cshtml]

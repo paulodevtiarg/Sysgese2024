@@ -9,137 +9,139 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SysGeSeApp2024
 build_property.RootNamespace = SysGeSeApp2024
-build_property.ProjectDir = C:\Users\paulo\Desktop\ProjetosdotNet\Sisgese2024\Sysgese2024\SysGeSeApp2024\
+build_property.ProjectDir = C:\Users\preciso\source\repos\paulodevtiarg\Sysgese2024\SysGeSeApp2024\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\paulo\Desktop\ProjetosdotNet\Sisgese2024\Sysgese2024\SysGeSeApp2024
+build_property.MSBuildProjectDirectory = C:\Users\preciso\source\repos\paulodevtiarg\Sysgese2024\SysGeSeApp2024
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Acesso/Detalhar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Detalhar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXERldGFsaGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Acesso/Incluir.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Incluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXEluY2x1aXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Acesso/Index.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Acesso/_TabelaFuncaoPrincipal.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acesso/_TabelaFuncaoPrincipal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNlc3NvXF9UYWJlbGFGdW5jYW9QcmluY2lwYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Acoes/Mensagens.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Acoes/Mensagens.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNvZXNcTWVuc2FnZW5zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Dadis/Index.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Dadis/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFkaXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Funcao/Deletar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Funcao/Deletar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2FvXERlbGV0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Funcao/Detalhar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Funcao/Detalhar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2FvXERldGFsaGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Funcao/Editar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Funcao/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2FvXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Funcao/Incluir.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Funcao/Incluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2FvXEluY2x1aXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Funcao/Index.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Funcao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2FvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Funcao/_TabelaFuncaoPrincipal.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Funcao/_TabelaFuncaoPrincipal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2FvXF9UYWJlbGFGdW5jYW9QcmluY2lwYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Home/Index.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Home/Privacy.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Perfil/Deletar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Perfil/Deletar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXERlbGV0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Perfil/Detalhar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Perfil/Detalhar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXERldGFsaGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Perfil/Editar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Perfil/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXEVkaXRhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Perfil/Incluir.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Perfil/Incluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXEluY2x1aXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Perfil/Index.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Perfil/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Perfil/_TabelaFuncaoPrincipal.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Perfil/_TabelaFuncaoPrincipal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXF9UYWJlbGFGdW5jYW9QcmluY2lwYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Shared/Error.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Unidade/Deletar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Unidade/Deletar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxEZWxldGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Unidade/Detalhar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Unidade/Detalhar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxEZXRhbGhhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Unidade/Editar.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Unidade/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Unidade/Incluir.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Unidade/Incluir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxJbmNsdWlyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Unidade/Index.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Unidade/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Unidade/_TabelaUnidadePrincipal.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Unidade/_TabelaUnidadePrincipal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVW5pZGFkZVxfVGFiZWxhVW5pZGFkZVByaW5jaXBhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/_ViewImports.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/_ViewStart.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paulo/Desktop/ProjetosdotNet/Sisgese2024/Sysgese2024/SysGeSeApp2024/Views/Shared/_Layout.cshtml]
+[C:/Users/preciso/source/repos/paulodevtiarg/Sysgese2024/SysGeSeApp2024/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ga35b9do6i
