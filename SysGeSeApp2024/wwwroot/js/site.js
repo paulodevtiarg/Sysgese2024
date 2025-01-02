@@ -131,9 +131,17 @@ function buscarDadosClientes() {
 //    })
 //});
 //FECHAR O ALERT APOS A MENSAGEM
+//$(function () {
+//    setTimeout(function () {
+//        $(".alert").fadeOut("slow", function () {
+//            $(this).alert('close');
+//        });
+//    }, 5000);
+//});
+
 $(function () {
     setTimeout(function () {
-        $(".alert").fadeOut("slow", function () {
+        $(".alert:not(#alert-persistente)").fadeOut("slow", function () {
             $(this).alert('close');
         });
     }, 5000);
