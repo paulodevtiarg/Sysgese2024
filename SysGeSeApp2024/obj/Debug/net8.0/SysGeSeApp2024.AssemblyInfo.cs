@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SysGeSeApp2024")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+843a32d2e02f208280e5c21acf153224442cac55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fa4e3fe2c2e3b29c1600b1bdcd3edb88f6f5bce")]
 [assembly: System.Reflection.AssemblyProductAttribute("SysGeSeApp2024")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SysGeSeApp2024")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\",
+  "WorkspaceRootPath": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\paulo\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\views\\acesso\\deletar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\views\\acesso\\deletar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\views\\acesso\\deletar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\paulo\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\paulo\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\paulo\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|c:\\users\\preciso\\source\\repos\\paulodevtiarg\\sysgese2024\\sysgeseapp2024\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28A6C251-1199-4433-AF1D-06A188F5343C}|SysGeSeApp2024\\SysGeSeApp2024.csproj|solutionrelative:sysgeseapp2024\\controllers\\perfilcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -80,11 +80,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Deletar.cshtml",
-              "DocumentMoniker": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Deletar.cshtml",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Deletar.cshtml",
               "RelativeDocumentMoniker": "SysGeSeApp2024\\Views\\Acesso\\Deletar.cshtml",
-              "ToolTip": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Deletar.cshtml*",
-              "RelativeToolTip": "SysGeSeApp2024\\Views\\Acesso\\Deletar.cshtml*",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAwHkAAAAHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Views\\Acesso\\Deletar.cshtml",
+              "RelativeToolTip": "SysGeSeApp2024\\Views\\Acesso\\Deletar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-02T16:11:24.742Z",
               "EditorCaption": ""
@@ -93,35 +93,33 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\wwwroot\\js\\site.js",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "SysGeSeApp2024\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\wwwroot\\js\\site.js",
               "RelativeToolTip": "SysGeSeApp2024\\wwwroot\\js\\site.js",
               "ViewState": "AgIAAGIAAAAAAAAAAAAgwIsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-02T16:08:45.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T16:08:45.523Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AcessoController.cs",
-              "DocumentMoniker": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\AcessoController.cs",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\AcessoController.cs",
               "RelativeDocumentMoniker": "SysGeSeApp2024\\Controllers\\AcessoController.cs",
-              "ToolTip": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\AcessoController.cs",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\AcessoController.cs",
               "RelativeToolTip": "SysGeSeApp2024\\Controllers\\AcessoController.cs",
               "ViewState": "AgIAAJgAAAAAAAAAAAAgwPwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T01:07:25.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T01:07:25.955Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "PerfilController.cs",
-              "DocumentMoniker": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\PerfilController.cs",
+              "DocumentMoniker": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\PerfilController.cs",
               "RelativeDocumentMoniker": "SysGeSeApp2024\\Controllers\\PerfilController.cs",
-              "ToolTip": "C:\\Users\\Paulo\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\PerfilController.cs",
+              "ToolTip": "C:\\Users\\preciso\\source\\repos\\paulodevtiarg\\Sysgese2024\\SysGeSeApp2024\\Controllers\\PerfilController.cs",
               "RelativeToolTip": "SysGeSeApp2024\\Controllers\\PerfilController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
