@@ -5,7 +5,7 @@ namespace SysGeSeApp2024.Models.ViewModel
 {
     public class AcessoListViewModel : BaseListViewModel
     {
-        public AcessoListViewModel(List<AcessoViewModel>? acessos, List<TabelaViewModel>? tabelas, List<PerfilViewModel>? perfis, int? tabId, int? perfilId, sbyte status, int totalItens, int paginaAtual, int qtdItensPagina) : base(totalItens, paginaAtual, qtdItensPagina)
+        public AcessoListViewModel(List<AcessoViewModel>? acessos, List<TabelaViewModel>? tabelas, List<PerfilViewModel>? perfis, int? tabId, int? perfilId, string? ordenarPor, string? tipoOrdenacao, sbyte status, int totalItens, int paginaAtual, int qtdItensPagina) : base(totalItens, paginaAtual, qtdItensPagina)
         {
             Acessos = acessos;
             TotalItens = totalItens;
@@ -14,10 +14,14 @@ namespace SysGeSeApp2024.Models.ViewModel
             Tabelas = tabelas;
             IdTabela = tabId;
             IdPerfil = perfilId;
+            OrdenarPor = ordenarPor;
+            TipoOrdenacao = tipoOrdenacao;
             
         }
         public int TotalItens { get; set; }
         public sbyte? Status { get; set; }
+        public string? OrdenarPor { get; set; }
+        public string? TipoOrdenacao { get; set; }
         public int? IdTabela { get; set; }
         public virtual Tabela? Tabela { get; set; }
 

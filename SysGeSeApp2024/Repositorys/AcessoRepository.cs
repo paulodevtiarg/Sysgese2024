@@ -17,9 +17,9 @@ namespace SysGeSeApp2024.Repositorys
             return acesso;
         }
 
-        public async Task<(List<Acesso>? Acessos, int QtdTotalItens)> ObterAcessos(int? tabelaId,int? perfilId, sbyte status, string ordenarPor, string tipoOrdenacao, int paginaAtual, int qtdItensPagina)
+        public async Task<(List<Acesso>? Acessos, int QtdTotalItens)> ObterAcessos(int? tabelaId,int? perfilId, sbyte status, string? ordenarPor, string? tipoOrdenacao, int paginaAtual, int qtdItensPagina)
         {
-            IQueryable<Acesso> query = _db.Acessos.AsNoTracking();
+            IQueryable<Acesso> query = _db.Acessos.Include(x=>x.Tabela).Include(x=>x.Perfil).AsNoTracking();
 
 
             if (tabelaId.HasValue && tabelaId.Value > 0)
@@ -37,12 +37,37 @@ namespace SysGeSeApp2024.Repositorys
                 query = query.Where(f => f.Status.Equals(status));
             }
 
-            int qtdTotalItens = await query.CountAsync();
+            // Aplicar ordenação dinâmica
+            if (!string.IsNullOrWhiteSpace(ordenarPor))
+            {
+                ordenarPor = ordenarPor.ToLower();
+                tipoOrdenacao = tipoOrdenacao?.ToLower() == "desc" ? "desc" : "asc"; // Padrão: ascendente
+
+                query = ordenarPor switch
+                {
+                    "perfil" => tipoOrdenacao == "asc"
+                        ? query.OrderBy(p => p.Perfil.Descricao)
+                        : query.OrderByDescending(p => p.Perfil.Descricao),
+                    "tabela" => tipoOrdenacao == "asc"
+                        ? query.OrderBy(p => p.Tabela.TabelaDesc)
+                        : query.OrderByDescending(p => p.Tabela.TabelaDesc),
+                    _ => query // Sem ordenação se o campo for inválido
+                };
+            }
+            else
+            {
+                                
+                    // Ordenação padrão por Tabela.TabelaDesc (ascendente)
+                    query = query.OrderBy(p => p.Tabela.TabelaDesc);
+                
+            }
+
+
+            //int qtdTotalItens = await query.Select(x => x.Id).CountAsync();
+            //int qtdTotalItens2 = await query.AsNoTracking().CountAsync();
+            int qtdTotalItens = await query.AsNoTracking().Select(x => x.Id).CountAsync();
 
             var lista = await query.
-               Include(p=> p.Tabela).
-               Include(p=>p.Perfil).
-               OrderBy(p => p.Perfil).
                Skip(paginaAtual * qtdItensPagina).
                Take(qtdItensPagina).ToListAsync();
 

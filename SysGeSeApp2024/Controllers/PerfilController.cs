@@ -15,14 +15,14 @@ namespace SysGeSeApp2024.Controllers
         {
             _perfilRepository = perfilRepository;
         }
-        public async Task<IActionResult> Index(string descricao, sbyte status = 2, int paginaAtual = 1, int qtdItensPagina = 5)
+        public async Task<IActionResult> Index(string descricao, string? ordenarPor, string? tipoOrdenacao, sbyte status = 2, int paginaAtual = 1, int qtdItensPagina = 5)
         {
-            var (Perfis, QtdTotalItens) = await _perfilRepository.ObterPerfis(descricao, status, string.Empty, string.Empty, paginaAtual - 1, qtdItensPagina);
+            var (Perfis, QtdTotalItens) = await _perfilRepository.ObterPerfis(descricao, status, ordenarPor, tipoOrdenacao, paginaAtual - 1, qtdItensPagina);
 
 
             var lista = PerfilConverter.ToViewModel(Perfis);
 
-            return View(new PerfilListViewModel(lista, status, QtdTotalItens, paginaAtual, qtdItensPagina));
+            return View(new PerfilListViewModel(lista, ordenarPor, tipoOrdenacao, status, QtdTotalItens, paginaAtual, qtdItensPagina));
         }
         public async Task<IActionResult> Incluir()
         {

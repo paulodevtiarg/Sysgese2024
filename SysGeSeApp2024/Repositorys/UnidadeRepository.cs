@@ -32,8 +32,9 @@ namespace SysGeSeApp2024.Repositorys
                 query = query.Where(f => f.Status.Equals(status));
             }
 
-            int qtdTotalItens = await query.CountAsync();
-            var lista2 = await query.ToListAsync();
+            int qtdTotalItens = await query.Select(x => x.Id).CountAsync();
+
+          
 
             var lista = await query.
                OrderBy(p => p.Id).

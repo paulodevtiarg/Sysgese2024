@@ -6,12 +6,30 @@
            
             <th class="text-center fw-semibold prn-border-columns">Ativo?</th>
 
-            <th class="text-center fw-semibold prn-border-columns">Tabela</th>
+            <th class="text-center fw-semibold prn-border-columns">Tabela
+                <a href="?ordenarPor=tabela&tipoOrdenacao=asc">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+                <a href="?ordenarPor=tabela&tipoOrdenacao=desc">
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+
+
+            </th>
             <th class="text-center fw-semibold prn-border-columns">Visualizar</th>
             <th class="text-center fw-semibold prn-border-columns">Inserir</th>
             <th class="text-center fw-semibold prn-border-columns">Alterar</th>
             <th class="text-center fw-semibold prn-border-columns">Excluir</th>
-            <th class="text-center fw-semibold prn-border-columns">Perfil</th>
+            <th class="text-center fw-semibold prn-border-columns">Perfil
+                <a href="?ordenarPor=perfil&tipoOrdenacao=asc">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+                <a href="?ordenarPor=perfil&tipoOrdenacao=desc">
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+
+
+            </th>
             <th class="text-center fw-semibold prn-border-columns prn-border-columns-left prn-border-columns-theader">Ação</th>
 
         </tr>
@@ -32,7 +50,7 @@
                 {
                     <td style="width:2%;" class=" prn-border-columns prn-border-columns-left  text-center align-middle"> <a asp-controller="Acesso" asp-action="AtivarDesativar" asp-route-id="@item.Id"> <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="@((item.Status == 1) ? "ATIVO" : "BLOQUEADO")" class="fs-5 text-danger fa-duotone fa-face-sad-tear"></i></a></td>
                 }
-
+                
                 <td style="width:40%;" class="prn-border-columns text-rigth align-middle">@item.Tabela.TabelaDesc</td>
                 <td style="width:2%;" class="prn-border-columns prn-border-columns-left text-center align-middle">
                     <a asp-controller="Acesso" asp-action="DarPermissaoTabela" asp-route-id="@item.Id" asp-route-tab_v="@item.TabelaVisualizar" asp-route-field="TabelaVisualizar">
