@@ -5,16 +5,19 @@ namespace SysGeSeApp2024.Models.ViewModel
  
     public class PerfilListViewModel : BaseListViewModel
     {
-        public PerfilListViewModel(List<PerfilViewModel>? perfis, sbyte status, int totalItens, int paginaAtual, int qtdItensPagina) : base(totalItens, paginaAtual, qtdItensPagina)
+        public PerfilListViewModel(List<PerfilViewModel>? perfis, string? ordenarPor, string? tipoOrdenacao, sbyte status, int totalItens, int paginaAtual, int qtdItensPagina) : base(totalItens, paginaAtual, qtdItensPagina)
         {
             Perfis = perfis;
             TotalItens = totalItens;
             Status = status;
-
+            OrdenarPor = ordenarPor;
+            TipoOrdenacao = tipoOrdenacao;
         }
         public string? Descricao { get;set; }
         public int TotalItens { get; set; }
         public sbyte? Status { get; set; }
+        public string? OrdenarPor { get; set; }
+        public string? TipoOrdenacao { get; set; }
         public List<PerfilViewModel>? Perfis { get; set; }
 
 

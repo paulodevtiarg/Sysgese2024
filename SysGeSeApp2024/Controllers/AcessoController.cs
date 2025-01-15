@@ -7,7 +7,7 @@ using SysGeSeApp2024.Models;
 using SysGeSeApp2024.Models.ViewModel;
 using SysGeSeApp2024.Repositorys;
 using System.Diagnostics.Metrics;
-/**/
+
 namespace SysGeSeApp2024.Controllers
 {
     public class AcessoController : Controller
@@ -24,14 +24,14 @@ namespace SysGeSeApp2024.Controllers
             _perfilRepostory = perfilRepository;
 
         }
-        public async Task<IActionResult> Index(int? tabelaId, int? perfilId, sbyte status = 2, int paginaAtual = 1, int qtdItensPagina = 10)
+        public async Task<IActionResult> Index(int? tabelaId, int? perfilId, string? ordenarPor, string? tipoOrdenacao, sbyte status = 2, int paginaAtual = 1, int qtdItensPagina = 10)
         {
 
-            var (Acessos, QtdTotalItens) = await _acessoRepository.ObterAcessos(tabelaId, perfilId, status, string.Empty, string.Empty, paginaAtual - 1, qtdItensPagina);
+            var (Acessos, QtdTotalItens) = await _acessoRepository.ObterAcessos(tabelaId, perfilId, status, ordenarPor, tipoOrdenacao, paginaAtual - 1, qtdItensPagina);
             var tabelas = TabelaConverter.ToViewModel(await _tabelaRepostory.ObterTodos());
             var perfis = PerfilConverter.ToViewModel(await _perfilRepostory.ObterTodos());
             var lista = AcessoConverter.ToViewModel(Acessos);
-            return View(new AcessoListViewModel(lista, tabelas, perfis, tabelaId, perfilId, status, QtdTotalItens, paginaAtual, qtdItensPagina));
+            return View(new AcessoListViewModel(lista, tabelas, perfis, tabelaId, perfilId, ordenarPor, tipoOrdenacao, status, QtdTotalItens, paginaAtual, qtdItensPagina));
 
         }
 
